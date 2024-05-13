@@ -1,0 +1,9 @@
+Deploying Spring Boot App on AWS:
+
+AWS Services:
+1. Amazon EC2 - provides virtual computer to install java, sql, server.
+2. AWS Elastic Beanstalk - upload code and it will handle load balancing, deployments, auto-scaling, 
+application health monitoring.
+3. Amazon RDS - provides Relational Database.
+4. Amazon Route 53 - connects domain with our IP.
+5. Amazon S3 - Object Storage to retrieve any amount of data from anywhere.

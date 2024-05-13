@@ -1,0 +1,23 @@
+JWT Authentication:
+
+1. JWT - Json Web Token
+2. Used for securing Rest Apis
+3. Follows stateless authentication mechanism
+
+JWT comprises of: (x.y.z)
+1. Header - Algo+Type
+2. Payload - Info about claims
+3. Signature - encoded header + encoded payload + key
+
+Steps to implement JWT:
+
+1. Add Dependency(io.jsonwebtoken)
+2. Create JWT authenticationEntryPoint implements AuthenticationEntryPoint - called and exception is thrown
+ when an unauthorized person tries to access the APIs
+3. Create JWTTokenHelper
+4. jwtAuthenticationFilter extends OnceRequestFilter - to perform the followig:
+Get JWT token from request, Validate token, get user from token, load user associated with token, Set Spring Security
+5. Create JwtAuthResponse
+6. Configure JWT in spring security config
+7. Create Login API to return token
+8. Test the Application
